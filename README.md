@@ -1,10 +1,10 @@
-# correlatividades
+# Correlatividades
 Aplicación web que sirve para calcular correlatividades, esto es, brindar un listado de los exámenes que un estudiante puede rendir dependiendo de las asignaturas previamente aprobadas.
 
 # Link a la aplicación web
 https://correlatividades.firebaseapp.com/ 
 
-# En js/sript.js se puede modificar la información para obtener resultados de otra carrera
+# En js/script.js se puede modificar la información para obtener resultados de otra carrera
 const materiasPrimero = [  
     { "name": "Nombre materia 1", "code": "A1", "corr": [] },  
     { "name": "Nombre materia 2", "code": "A2", "corr": [] },  
