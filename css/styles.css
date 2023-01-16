@@ -1,0 +1,22 @@
+.detalles {
+    font-size: large;
+    color: white;
+}
+
+.form-check-input {
+    border: 2px darkgray solid;
+}
+
+.form-check-input:hover {
+    background-color: #0D6EFD;
+}
+
+.form-check-input:hover + .form-check-label {
+    transform: scale(1.02);
+    transition: .1s;
+}
+
+.btn {
+    padding: 10px;
+    margin: 10px;
+}

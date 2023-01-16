@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Categorización de la web -->
+    <meta name="description" content="Aplicación web para calcular las correlatividades de asignaturas en una institución educativa">
+    <!-- Palabras clave para el buscador -->
+    <meta name="keywords" content="INSPT, materias, correlatividades">
+
+    <title>Correlatividades</title>
+
+    <!-- Enlaces adicionales --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" onclick="setMateriasCheckbox(true)">INSPT</a> 
+            <div class="detalles">Correlatividades según la selección de materias aprobadas</div>
+        </div>
+    </nav>     
+    <div class="container text-center">
+        <br>
+        <div id="tecnicatura"> <!-- Nombre del título --> </div>
+        <hr>
+        <div class="row">     <!-- INI-ROW-1 -->
+            <div class="col-sm-4">
+                <h3>Primer año</h3>
+                <div id="primero" style="text-align:start;"></div>
+            </div>
+            <div class="col-sm-4">
+                <h3>Segundo año</h3>
+                <div id="segundo" style="text-align:start;"></div>
+            </div>
+            <div class="col-sm-4">
+                <h3>Tercer año</h3>
+                <div id="tercero" style="text-align:start;"></div>
+            </div>
+        </div>                <!-- FIN-ROW-1 -->
+        <hr>
+        <div class="row">     <!-- INI-ROW-2 -->
+            <div class="col-sm-4">
+                <a href="#posibles" class="btn btn-outline-primary" onclick="materiasSeleccionadas()">
+                    MATERIAS QUE PUEDE RENDIR
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#" class="btn btn-outline-secondary" onclick="setMateriasCheckbox(false)">
+                    SELECCIONAR TODAS
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#" class="btn btn-outline-secondary" onclick="setMateriasCheckbox(true)">
+                    LIMPIAR SELECCIÓN
+                </a>
+            </div>
+        </div>                <!-- FIN-ROW-1 -->     
+        <hr>
+        <ul id="posibles" style="text-align:start;"> <!-- Lista de materias que puede rendir --> </ul>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
